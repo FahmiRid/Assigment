@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marine Debris Pollution Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Marine Debris Pollution Form</h1>
+  </header>
+  <main>
+    <form id="marine-debris-form">
+      <section>
+        <h2>Debris Type</h2>
+        <select id="debris-type" required>
+          <option value="">Select a debris type</option>
+          <option value="plastic">Plastic</option>
+          <option value="glass">Glass</option>
+          <option value="metal">Metal</option>
+          <option value="other">Other (please specify)</option>
+        </select>
+        <!-- <input type="text" id="other-debris-type" placeholder="Specify other debris type"> -->
+        <div class="inputBox">
+          <span>Others :</span>
+          <input id="other-debris-type" placeholder="Specify other debris type" type="text">
+        </div>
+      </section>
+      <section>
+        <h2>Source</h2>
+        <select id="source" required>
+          <option value="">Select a source</option>
+          <option value="coastal-activities">Coastal activities</option>
+          <option value="industrial-waste">Industrial waste</option>
+          <option value="other-source">Other (please specify)</option>
+        </select>
+        <!-- <input type="text" id="other-source" placeholder="Specify other source"> -->
+        <div class="inputBox">
+          <span>Others :</span>
+          <input id="other-source" placeholder="Specify other source" type="text">
+        </div>
+      </section>
+      <section>
+        <h2>Geographical Location</h2>
+        <!-- <input type="text" id="location" required placeholder="Enter location (e.g. city, state, country)"> -->
+        <div class="inputBox">
+          <span>Location :</span>
+          <input id="location" placeholder="Enter location (e.g. city, state, country)" type="text" required="">
+        </div>
+      </section>
+      <section>
+        <h2>Observed Impacts</h2>
+        <!-- <textarea id="impacts" required placeholder="Describe observed impacts on marine life"></textarea> -->
+        <div class="inputBox">
+          <span>Description :</span>
+          <textarea id="impacts" placeholder="Describe observed impacts on marine life" type="text" required=""></textarea>
+      </section>
+      <section>
+        <h2>Contact Information</h2>
+        <div class="contact-container">
+          <div class="inputBox">
+            <span>Email :</span>
+            <input type="email" id="email" placeholder="Enter email address" type="text" required="">
+          </div>
+          <div class="inputBox">
+            <span>Contact Number :</span>
+            <input type="tel" id="phone" placeholder="Enter phone number (optional)" type="text">
+          </div>
+        </div>
+      </section>
+      <div class="button-submit">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+    <div id="error-message"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
